@@ -1,0 +1,359 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    text-align: center  ;
+}
+.instructions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.youtube{
+    width: 95%;
+    margin: auto;
+}
+
+.translate{
+    background: gold;
+    color: black;
+    border: 1px solid black;
+    padding: 3px 5px ;
+    border-radius: 10px;
+}
+
+.translate:hover{
+    cursor: pointer;
+}
+
+.game-start{
+    background-color: aqua;
+    padding: 5px 7px;
+    color: black;
+    font-family: "Kode Mono", monospace;
+    font-weight: bolder;
+    font-size: larger;
+    border-radius: 15px;
+}
+.game-start:hover{
+    background-color: black;
+    padding: 5px 7px;
+    color: aqua;
+    cursor: pointer;
+}
+
+html{
+    background-color: black;
+}
+.container{
+    position: relative;
+    width: 80vw;
+    height: 100vh;
+    margin: 0 10vw;
+    /* background-color: black; */
+
+}
+
+.pressed{
+    opacity: 0.5;
+}
+
+.game-over{
+    background-color: red;
+}
+
+.nav{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.title>span{
+    color: white;
+    font-size: 30px;
+    font-family: "Kode Mono", monospace;
+}
+
+
+.instruct-content{
+    border: 2px solid black;
+    width: 300px;
+    height: auto;
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    background-color: white;
+    color: black;
+    font-size: small;
+    padding: 7px 10px;
+    border-radius: 8px;
+    display: none;
+}
+.title-img{
+    background-color: white;
+    border-radius: 50%;
+}
+
+.head-text{
+    margin-top: 15px;
+    color: aqua;
+    font-size: 40px;
+    font-family: "Kode Mono", monospace;
+}
+.start{
+    color: white;
+    font-family: "Kode Mono", monospace;
+    font-size: medium;
+    font-weight: bolder;
+}
+
+.head-desc{
+    color: white;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    width: 85%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+
+.grid-container{
+    
+    width: 300px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-template-rows: 48% 48%;
+    gap: 2%;
+    margin: auto;
+}
+
+.grid-container>*{
+    border: 3px solid black;
+}
+.grid-container>*:hover{
+    cursor: pointer;
+}
+
+.green{
+    background-color: green;
+    border-radius: 15%;
+}
+.red{
+    background-color: red;
+    border-radius: 15%;
+}
+.blue{
+    background-color: blue;
+    border-radius: 15%;
+}
+.yellow{
+    background-color: yellow;
+    border-radius: 15%;
+}
+
+.footer{
+    padding: 20px 0;
+}
+.footer-text{
+    font-family: "Kode Mono", monospace;
+    font-size: larger;
+    font-weight: bolder;
+    color: white;
+}
+
+.instruct-image:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.3s ease;
+}
+.logo{
+    animation: logo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes logo {
+    0%{
+        color: red;
+    }
+    20%{
+        color: aqua;
+    }
+    40%{
+        color: green;
+    }
+    60%{
+        color: aqua;
+    }
+    80%{
+        color: yellow;
+    }
+    100%{
+        color: aqua;
+    }
+}
+
+@media (max-width:900px){
+    *{
+        overflow: visible;
+    }
+    .instruct-content{
+        right: 10px;
+    }
+    .container{
+        width: 100vw;
+        height: auto;
+        margin: 0%;
+        display: contents;
+    }
+    .container>*{
+        margin-bottom: 30px;
+    }
+    .nav{
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    .grid-container{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+
+@media (max-width:750px){
+    *{
+        margin: 0%;
+    }
+
+    .grid-container{
+        margin: auto;
+        margin-top: 0%;
+        margin-bottom: 0%;
+
+    }
+
+    .head-text{
+        font-size: 30px;
+    }
+    .head-desc{
+        font-size: 15px;
+    }
+    .grid-container{
+        width: 230px;
+        height: 230px;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (max-width:550px) {
+    .game-start{
+        padding: 3px 5px;
+        font-size: medium;
+        border-radius: 10px;
+    }
+    .start{
+        font-size: small;
+    }
+    .instruct-content{
+        position: static;
+        width: 70%;
+        padding: 10px;
+        margin: auto;
+    }
+    .container>*{
+        margin-top: 15px;
+    }
+    .nav>*{
+        width: 100%;
+    }
+    .title{
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .title>span{
+        font-size: 25px;
+    }
+    .title>img{
+        height: 60px;
+    }
+    .instruct-image{
+        height: 25px;
+    }
+    .head-text{
+        font-size: 20px;
+    }
+    .head-desc{
+        font-size: 10px;
+    }
+    .grid-container{
+        width: 200px;
+        height: 200px;
+        margin: auto;
+    }
+
+    .footer-text{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:450px){
+    .instruct-content{
+        padding: 10px;
+        width: 90vw;
+    }
+    .footer-text{
+        font-size: 10px;
+    }
+
+.title>span{
+    font-size: 20px;
+}
+.title>img{
+    height: 45px;
+}
+.instruct-image{
+    height: 20px;
+}
+.head-text{
+    font-size: 15px;
+}
+.head-desc{
+    font-size: 10px;
+}
+
+}
+
+@media (max-width:200px) {
+    .instruct-image{
+        height: 17px;
+    }
+    .grid-container{
+        width: 100vw;
+        height: 100vw;
+    }    
+
+    .title{
+        width: 100vw;
+        height: auto;
+    }
+    .title>img{
+        height: 30px;
+    }
+    .title>span{
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Game</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Protest+Guerrilla&display=swap"     rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="nav">
+            <h1 class="title"><img class="title-img" src="./assets/images/logo.png" alt="logo" height="70"><span>Saala&nbsp;Project</span></h1>
+            <div class="instructions"><button class="game-start">Start</button><img class="instruct-image" src="./assets/images/help-removebg-preview.png" alt="Instructions" height="60" class="instruct-image">&nbsp;</div>
+
+        </div>
+
+        <p class="instruct-content">
+            <strong>Instructions</strong><br><br><strong>Start Game:</strong> Press any key to start. <br>
+<br>
+<strong>Pay Attention to the Sequence: </strong>The game will display a sequence of colored lights (or make sounds) in a specific order. Each color represents a different button or action. <br>
+
+<br>
+<strong>Repeat the Sequence:</strong> After the sequence is displayed, it's your turn to repeat it. Press the buttons in the same order that they were shown or mimic the sounds if applicable. <br>
+
+<br>
+<strong>Correct Response:</strong> If you correctly repeat the sequence, the game will acknowledge your success and display the next sequence, which will be longer or more complex. <br>
+
+<br>
+<strong>Incorrect Response: </strong>If you make a mistake by pressing the wrong button or pressing them in the wrong order, the game will signal that you've made an error. Depending on the game, this might result in ending the game
+<br><br>
+<iframe class="youtube" style="background-color: white;" src="https://www.youtube.com/embed/1Yqj76Q4jJ4?si=2evKQMJQpaeivWXZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</p>
+
+        <div class="header">
+            <h1 class="head-text">Simon Game</h1>
+            <div class="start">Press Start Button To Start!</div>
+            <p class="head-desc">
+                The Simon game challenges players to remember and repeat sequences of colored lights or sounds. As the game progresses, sequences become longer and more complex, testing memory and concentration.
+            </p>
+        </div>
+
+        <div class="grid-container">
+            <div id="green" class="btn green"></div>
+            <div id="red" class="btn red"></div>
+            <div id="blue" class="btn blue"></div>
+            <div id="yellow" class="btn yellow"></div>
+        </div>
+
+
+        <div class="footer">
+            <p class="footer-text">Created By Saala #Cooder #WebDev</p>
+        </div>
+
+        
+    </div>    
+    
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
